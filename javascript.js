@@ -14,25 +14,25 @@ if (computerSelection === 1) {
 
 console.log(computerSelection)
 
-//Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
-
-let playerSelection = String(prompt("write rock, paper or scissors").toLowerCase());
-
-function playRound (playerSelection, computerSelection) {
-}
-    if (computerSelection === playerSelection){
-        alert("it's a tie");
+function playRound(playerSelection, computerSelection) {
+let result;
+    if (computerSelection === playerSelection){ 
+	    result = "it's a tie";
     } else if (computerSelection === "rock" && playerSelection === "paper"){
-        alert("Paper beats Rock");
+ 	    result = "You Win! Paper beats Rock";
     } else if (computerSelection === "paper" && playerSelection === "rock"){
-        alert("Paper beats Rock");
-    } else if (computerSelection === "rock" && playerSelection === "scissors"){
-        alert("Rock beats Scissors");
+    	result = "You Lose! Paper beats Rock";
     } else if (computerSelection === "scissors" && playerSelection === "rock"){
-        alert("Rock beats Scissors");
+        result = "You Win! Rock beats Scissors"
+    } else if (computerSelection === "rock" && playerSelection === "scissors"){
+        result = "You Lose! Rock beats Scissors"
     } else if (computerSelection === "paper" && playerSelection === "scissors"){
-            alert("Scissors beat Paper");
+        result = "You Win! Scissors beat Paper";
     } else {
-        alert("Scissors beat Paper");
+        result = "You Lose! Scissors beat Paper";
     }
-    
+    return result;
+}
+const playerSelection = "rock";
+console.log(playerSelection)
+console.log(playRound(playerSelection, computerSelection));
