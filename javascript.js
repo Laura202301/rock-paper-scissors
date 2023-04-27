@@ -14,25 +14,24 @@ if (computerSelection === 1) {
 
 console.log(computerSelection)
 
+let playerSelection = String(prompt("write rock, paper or scissors").toLowerCase());
+
 function playRound(playerSelection, computerSelection) {
-let result;
-    if (computerSelection === playerSelection){ 
-	    result = "it's a tie";
-    } else if (computerSelection === "rock" && playerSelection === "paper"){
- 	    result = "You Win! Paper beats Rock";
-    } else if (computerSelection === "paper" && playerSelection === "rock"){
-    	result = "You Lose! Paper beats Rock";
-    } else if (computerSelection === "scissors" && playerSelection === "rock"){
-        result = "You Win! Rock beats Scissors"
-    } else if (computerSelection === "rock" && playerSelection === "scissors"){
-        result = "You Lose! Rock beats Scissors"
-    } else if (computerSelection === "paper" && playerSelection === "scissors"){
-        result = "You Win! Scissors beat Paper";
-    } else {
-        result = "You Lose! Scissors beat Paper";
+let result = 0;
+    if (computerSelection === "rock" && playerSelection === "paper" ||computerSelection === "scissors" && playerSelection === "rock" ||computerSelection === "paper" && playerSelection === "scissors") {
+        return ++result + " " + "You win!";
+
+    } else if (computerSelection === "paper" && playerSelection === "rock" ||
+    computerSelection === "rock" && playerSelection === "scissors" ||
+    computerSelection === "scissors" && playerSelection === "paper") {
+        return ++result + " " + "You Lose!";
+    
+    } else (computerSelection === playerSelection); { 
+        return result + " " + "it's a tie"; 
     }
-    return result;
 }
-const playerSelection = "rock";
+
+//const playerSelection = "paper";
 console.log(playerSelection)
 console.log(playRound(playerSelection, computerSelection));
+
