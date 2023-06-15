@@ -38,3 +38,10 @@ body {
 .img-challenge {
     border: 2px solid black;
 }
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgb(250, 250, 108);
+}
