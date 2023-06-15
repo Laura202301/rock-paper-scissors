@@ -1,0 +1,7 @@
+body {
+    font-family: "Audiowide", Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center  
+}
