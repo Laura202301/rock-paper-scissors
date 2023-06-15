@@ -20,3 +20,21 @@ body {
     color: rgb(250, 250, 108);
     font-size: 20px;
 }
+
+.computer-score,
+.player-score {
+    border: 3px solid rgb(97, 9, 168);
+    border-radius: 14px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.square1,
+.square2 {
+    flex-grow: 0;
+    flex-basis: 135px;
+}
+
+.img-challenge {
+    border: 2px solid black;
+}
