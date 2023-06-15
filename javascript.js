@@ -14,7 +14,7 @@ if (computerSelection === 1) {
 
 console.log(computerSelection)
 
-let playerSelection = String(prompt("write rock, paper or scissors").toLowerCase());
+//let playerSelection = String(prompt("write rock, paper or scissors").toLowerCase());
 
 function playRound(playerSelection, computerSelection) {
 let result = 0;
