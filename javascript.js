@@ -87,6 +87,6 @@ scissorsButton.addEventListener("click", function() {
   }
 });
 
-document.querySelector(".play-again").addEventListener("click", function() {
+document.querySelector(".arrow1").addEventListener("click", function() {
   location.reload();
 });
