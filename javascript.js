@@ -90,3 +90,7 @@ scissorsButton.addEventListener("click", function() {
 document.querySelector(".arrow1").addEventListener("click", function() {
   location.reload();
 });
+
+document.querySelector(".icon").addEventListener("click", function() {
+  window.open("https://github.com/Laura202301/rock-paper-scissors", "_blank");
+});
