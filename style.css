@@ -99,3 +99,18 @@ img {
 .pointer {
     cursor: pointer;
 }
+
+.footer {
+    color: rgb(245, 245, 193);
+    font-family: 'Advent Pro', Arial, sans-serif;
+    font-size: 18px;
+    padding: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    max-width: 18px;
+}
